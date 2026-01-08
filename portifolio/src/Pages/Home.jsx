@@ -18,7 +18,7 @@ export default function Home() {
             Formação: Técnico(a) em Informática 👩🏻‍💻
           </p>
 
-          <a href="#projects" className={styles.button}>
+          <a href="/Projects" className={styles.button}>
             Ver meus projetos
           </a>
         </div>
