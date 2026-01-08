@@ -1,0 +1,131 @@
+/* ============================
+      CONTAINER
+============================ */
+.container {
+  width: 100%;
+  height: calc(100vh - 80px); /* desconta o header fixo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
+      HERO DIVIDIDA EM 50/50
+============================ */
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch; /* garante mesma altura para left e right */
+}
+
+/* LADO ESQUERDO (TEXTO) */
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 60px;
+  margin: 0;
+  color: #fff;
+}
+
+/* LADO DIREITO (IMAGEM) */
+.right {
+  flex: 1;
+  height: 100%; /* ocupa toda a altura da hero */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* força a imagem a preencher verticalmente */
+}
+
+/* IMAGEM COBRINDO TUDO */
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* cobre todo o espaço */
+  object-position: center; /* centraliza o foco da imagem */
+  display: block;          /* remove espaçamento inline */
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
+      TIPOGRAFIA E BOTÃO
+============================ */
+.title {
+  font-size: 3rem;
+  color: #b3aaff;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  max-width: 500px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.button {
+  font-size: 1.5rem;
+  padding: 18px 28px;
+  background: #6c63ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+  width: fit-content;
+}
+
+.button:hover {
+  background: #5146d9;
+  transform: scale(1.05);
+}
+
+/* ============================
+      RESPONSIVIDADE
+============================ */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .left {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+  }
+
+  .right img {
+    width: 100%;
+    height: auto; /* mantém proporção */
+    max-height: 400px; /* opcional: evita imagem gigante em telas pequenas */
+  }
+}
+
+/* ============================
+      BASE HTML/BODY
+============================ */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #1e1e2f, #2a1f4d);
+}

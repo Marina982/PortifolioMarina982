@@ -1,0 +1,101 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  padding-top: 100px; /* compensar o header fixo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2a1f4d);
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.left {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #b3aaff;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.button {
+  padding: 12px 24px;
+  background: #6c63ff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button:hover {
+  background: #5146d9;
+  transform: scale(1.05);
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImg {
+  width: 80%;
+  height: 500px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+  cursor: pointer;
+}
+
+.profileImg:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.3);
+}
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left {
+    padding-right: 0;
+  }
+
+  .profileImg {
+    margin-top: 30px;
+    width: 70%;
+  }
+}
