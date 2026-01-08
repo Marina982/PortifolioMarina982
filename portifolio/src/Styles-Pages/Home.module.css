@@ -129,3 +129,83 @@ html, body {
   overflow-x: hidden;
   background: linear-gradient(135deg, #1e1e2f, #2a1f4d);
 }
+
+/* ============================
+      RESPONSIVIDADE
+============================ */
+
+/* Tablets e telas médias */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .left {
+    width: 100%;
+    padding: 40px 20px;
+    align-items: center; /* centraliza conteúdo */
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+  }
+
+  .right img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+}
+
+/* Celulares grandes (até 600px) */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .left {
+    padding: 20px 10px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .button {
+    width: 100%; /* botão ocupa largura total */
+    text-align: center;
+  }
+
+  .right img {
+    max-height: 250px; /* evita imagem muito grande em celulares pequenos */
+  }
+}
