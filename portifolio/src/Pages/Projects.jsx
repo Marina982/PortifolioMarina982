@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../Components/Header";
 import styles from "../Styles-Pages/Projects.module.css";
 
-import projeto1 from "../images/projeto1.png";
 import projeto2 from "../images/projeto2.png";
 import projeto3 from "../images/projeto3.png";
 import projeto4 from "../images/projeto4.png";
@@ -20,22 +19,7 @@ export default function Projects() {
         </p>
 
         <div className={styles.grid}>
-          
-          {/* CARD 1 - TCC */}
-          <div className={styles.card}>
-            <img src={projeto1} alt="Projeto TCC" className={styles.image} />
-            <h3 className={styles.projectTitle}>Projeto TCC</h3>
-            <p className={styles.projectDesc}>
-              Desenvolvi um projeto analítico voltado à interpretação de dados sociais sobre famílias com pessoas com deficiência...
-            </p>
-            <a
-              href="https://github.com/olavo-goes/tccDeficiencia"
-              target="_blank"
-              className={styles.button}
-            >
-              Ver Projeto
-            </a>
-          </div>
+         
 
           {/* CARD 2 */}
           <div className={styles.card}>
