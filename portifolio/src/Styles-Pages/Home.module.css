@@ -3,13 +3,20 @@
 ============================ */
 .container {
   width: 100%;
-  height: calc(100vh - 80px); /* desconta o header fixo */
-  display: flex;
+  min-height: 100vh;          /* ocupa toda a altura da tela */
   justify-content: center;
   align-items: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
-  padding: 0;
+  padding-top: 80px;          /* espaço para o header fixo */
+  box-sizing: border-box;
+   display: flex;
+  flex-direction: column; /* força Header, Hero e Footer ficarem empilhados */
+  min-height: 100vh;
+   display: flex;
+  
+
+
 }
 
 /* ============================
@@ -17,10 +24,13 @@
 ============================ */
 .hero {
   width: 100%;
+  flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch; /* garante mesma altura para left e right */
+  align-items: stretch; 
+  min-height: calc(100vh - 80px); /* ocupa tela inteira menos o header */
+
 }
 
 /* LADO ESQUERDO (TEXTO) */
@@ -38,21 +48,21 @@
 /* LADO DIREITO (IMAGEM) */
 .right {
   flex: 1;
-  height: 100%; /* ocupa toda a altura da hero */
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: stretch; /* força a imagem a preencher verticalmente */
+  align-items: stretch;
 }
 
-/* IMAGEM COBRINDO TUDO */
+/* IMAGEM RESPONSIVA */
 .right img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;       /* cobre todo o espaço */
-  object-position: center; /* centraliza o foco da imagem */
-  display: block;          /* remove espaçamento inline */
+  height: auto;                        /* mantém proporção */
+  max-height: calc(100vh - 80px);      /* nunca ultrapassa área visível */
+  object-fit: cover;                   /* cobre todo o espaço */
+  object-position: center;             /* centraliza foco da imagem */
+  display: block;
   margin: 0;
   padding: 0;
 }
@@ -92,33 +102,6 @@
 }
 
 /* ============================
-      RESPONSIVIDADE
-============================ */
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
-
-  .left {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .right {
-    width: 100%;
-    height: auto;
-  }
-
-  .right img {
-    width: 100%;
-    height: auto; /* mantém proporção */
-    max-height: 400px; /* opcional: evita imagem gigante em telas pequenas */
-  }
-}
-
-/* ============================
       BASE HTML/BODY
 ============================ */
 html, body {
@@ -145,7 +128,7 @@ html, body {
   .left {
     width: 100%;
     padding: 40px 20px;
-    align-items: center; /* centraliza conteúdo */
+    align-items: center;
   }
 
   .title {
@@ -201,11 +184,11 @@ html, body {
   }
 
   .button {
-    width: 100%; /* botão ocupa largura total */
+    width: 100%;
     text-align: center;
   }
 
   .right img {
-    max-height: 250px; /* evita imagem muito grande em celulares pequenos */
+    max-height: 250px;
   }
 }
