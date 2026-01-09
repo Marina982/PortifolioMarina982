@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Components/Header";
 import styles from "../Styles-Pages/About.module.css";
 import profileImage from "../images/profile.jpeg"; // ajuste o caminho se necessário
+import Footer from "../Components/Footer";
 
 export default function About() {
   return (

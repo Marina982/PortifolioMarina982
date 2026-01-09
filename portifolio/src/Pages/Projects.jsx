@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import styles from "../Styles-Pages/Projects.module.css";
+import Footer from "../Components/Footer";
 
 import projeto2 from "../images/projeto2.png";
 import projeto3 from "../images/projeto3.png";
@@ -90,7 +91,6 @@ Tecnologias: React, JavaScript, integração com API REST.
               Ver Projeto
             </a>
           </div>
-
         </div>
       </section>
     </div>
