@@ -1,0 +1,43 @@
+.contactSection {
+  width: 100%;
+  min-height: 80vh;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.socialIcon {
+  font-size: 2.5rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.socialIcon:hover {
+  color: #6c63ff;
+  transform: scale(1.15);
+}

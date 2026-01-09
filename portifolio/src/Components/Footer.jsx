@@ -5,6 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
+        
         {/* Coluna esquerda */}
         <div className={styles.left}>
           <h2 className={styles.logo}>Marina Goes.Dev</h2>
@@ -28,11 +29,24 @@ export default function Footer() {
         <div className={styles.right}>
           <h3 className={styles.title}>Redes sociais</h3>
           <div className={styles.social}>
-            <a href="#" className={styles.icon}><i className="fab fa-facebook-f"></i></a>
-            <a href="#" className={styles.icon}><i className="fab fa-instagram"></i></a>
-            <a href="#" className={styles.icon}><i className="fab fa-twitter"></i></a>
+
+             {/* Instagran */}
+            <a href="https://www.instagram.com/marinagoes92/" className={styles.icon} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+
+            {/* LinkedIn */}
+            <a href="https://www.linkedin.com/in/marina-goes-08324930b/" className={styles.icon} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+
+            {/* GitHub */}
+            <a href="https://github.com/Marina982" className={styles.icon} target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github"></i>
+            </a>
           </div>
         </div>
+
       </div>
     </footer>
   );

@@ -58,6 +58,7 @@
   text-decoration: none;
   margin-bottom: 10px;
   transition: 0.3s;
+  font-size: 1.2rem;
 }
 
 .link:hover {
@@ -68,10 +69,11 @@
 .social {
   display: flex;
   gap: 15px;
+  font-size: 1.5rem;
 }
 
 .icon {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #fff;
   transition: 0.3s;
 }

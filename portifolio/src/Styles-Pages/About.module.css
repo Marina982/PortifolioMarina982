@@ -6,7 +6,8 @@ html, body {
 .container {
   width: 100%;
   min-height: calc(100vh - 80px);
-  padding-top: 100px; /* compensar o header fixo */
+  margin-bottom: 4%;
+  padding-top: 80px; /* compensar o header fixo */
   display: flex;
   justify-content: center;
   align-items: center;

@@ -9,6 +9,7 @@ import projeto4 from "../images/projeto4.png";
 
 export default function Projects() {
   return (
+    <>
     <div className={styles.container}>
       <Header />
 
@@ -94,5 +95,7 @@ Tecnologias: React, JavaScript, integração com API REST.
         </div>
       </section>
     </div>
+    <Footer/>
+</>
   );
 }
