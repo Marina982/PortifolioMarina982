@@ -1,6 +1,4 @@
-/* ============================
-      CONTAINER
-============================ */
+
 .container {
   width: 100%;
   min-height: 100vh;          /* ocupa toda a altura da tela */
@@ -14,8 +12,6 @@
   flex-direction: column; /* força Header, Hero e Footer ficarem empilhados */
   min-height: 100vh;
    display: flex;
-  
-
 
 }
 
