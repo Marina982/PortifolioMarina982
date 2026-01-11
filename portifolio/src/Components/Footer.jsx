@@ -10,7 +10,9 @@ export default function Footer() {
         <div className={styles.left}>
           <h2 className={styles.logo}>Marina Goes.Dev</h2>
           <p className={styles.text}>
-            © 2026 Marina Goes. Todos os direitos reservados.
+            © 2026 Marina Goes. 
+            <br/>
+            Todos os direitos reservados.
           </p>
         </div>
 
