@@ -6,6 +6,7 @@ import Footer from "../Components/Footer";
 import projeto2 from "../images/projeto2.png";
 import projeto3 from "../images/projeto3.png";
 import projeto4 from "../images/projeto4.png";
+import projeto5 from "../images/projeto5.png";
 
 export default function Projects() {
   return (
@@ -86,6 +87,26 @@ Tecnologias: React, JavaScript, integração com API REST.
             </p>
             <a
               href="#"
+              target="_blank"
+              className={styles.button}
+            >
+              Ver Projeto
+            </a>
+          </div>
+
+          {/* CARD 5 */}
+          <div className={styles.card}>
+            <img src={projeto5} alt="Projeto 5" className={styles.image} />
+            <h3 className={styles.projectTitle}>Replica site xBox games</h3>
+            <p className={styles.projectDesc}>
+             Descrição: Replica do E-commerce  da xbox games para fins educativos.
+<br/>
+Diferenciais:
+.
+
+            </p>
+            <a
+              href=""
               target="_blank"
               className={styles.button}
             >
