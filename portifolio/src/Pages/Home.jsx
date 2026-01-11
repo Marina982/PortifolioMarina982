@@ -14,6 +14,7 @@ import gitPage from "../images/tech/gitPage.svg";
 import figmaLogo from "../images/tech/figmaLogo.svg";
 import mysqlLogo from "../images/tech/mysqlLogo.svg";
 import tsLogo from "../images/tech/tsLogo.svg";
+import reactLogo from "../images/tech/reactLogo.svg";
 
 
 export default function Home() {
@@ -43,6 +44,7 @@ export default function Home() {
           <div className={styles.techGrid}>
             <img src={jsLogo} alt="JS" className={styles.techIcon} />
             <img src={tsLogo} alt="tsLogo" className={styles.techIcon} />
+            <img src={reactLogo} alt="reactLogo" className={styles.techIcon} />
             <img src={cssLogo} alt="CSS" className={styles.techIcon} />
             <img src={htmlLogo} alt="HTML" className={styles.techIcon} />
             <img src={nodeLogo} alt="node" className={styles.techIcon} />
